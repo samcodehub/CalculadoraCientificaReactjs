@@ -1,0 +1,110 @@
+.container {
+    
+    background-color: #5e3b51;
+    height: 450px;
+    width: 300px;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calculatorScreen {
+    background-color: #ffff99;
+    width: 270px;
+    height: 60px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    text-align: right;
+    
+}
+
+.calculatorScreen #display {
+    font-family: 'Share Tech Mono', monospace;
+    word-wrap: break-word;
+    position: relative;
+    left: 2px;
+    top: 3px;
+    height: 56px;
+    width: 266px;
+    color: black;
+    background-color: #e5dfa0;
+    font-size: 22px;
+    
+}
+
+#buttons {
+    position: relative;
+    top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 15px;
+}
+
+#acos,
+#asin,
+#atan {
+    font-size: 11px;
+}
+
+.button {
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+input.button:active, .extraKeys button{
+    background: coral;
+    opacity: 0.9;
+}
+
+#clear{
+    background: rgb(70, 70, 211);
+}
+
+.button.black {
+    color: white;
+    background-color: rgb(24, 23, 23);
+    border-bottom: 2px solid #647489;
+    border-top: 2px solid #000;
+}
+
+.button.grey {
+    color: white;
+    background-color: #647489;
+    border-bottom: 2px solid #647489;
+    outline: none;
+}
+
+.button.red {
+    color: white;
+    background-color: rgb(252, 22, 22);
+    border-bottom: 2px solid #647489;
+}
+
+.extraKeys {
+    position: relative;
+    top: 26px;
+    left: 15px;
+    margin-bottom: 8px;
+}
+
+.extraKeys button {
+    font-size: 12px;
+    border-radius: 5px;
+    background: #47668f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.extraKeys button:nth-child(2) {
+    margin-left: 20px;
+}
